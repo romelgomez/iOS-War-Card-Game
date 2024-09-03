@@ -39,6 +39,28 @@ struct ContentView: View {
                     
                     HStack () {
                         Spacer()
+
+                        VStack {
+                            Text("Player")
+                                .font(.title3)
+                                .foregroundStyle(.white)
+                         }
+
+
+                        Spacer()
+
+                        VStack {
+                            Text("CPU")
+                                .font(.title3)
+                                .foregroundStyle(.white)
+                        }
+
+                        Spacer()
+                    }
+
+
+                    HStack () {
+                        Spacer()
                         Image(playerCard)
                         Spacer()
                         Image(cpuCard)
@@ -118,5 +140,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
